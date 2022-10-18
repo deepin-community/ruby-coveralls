@@ -1,0 +1,4 @@
+06_remove-tins-from-gemspec.diff
+05_disable_pry.diff
+04_include_rspec.diff
+0005-Relax-simplecov-dependency.patch

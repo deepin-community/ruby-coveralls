@@ -1,0 +1,109 @@
+ruby-coveralls (0.8.23-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Update team name
+  * Add .gitattributes to keep unwanted files out of the source package
+
+  [ Sergio de Almeida Cipriano Junior ]
+  * Create debian/upstream/metadata
+  * debian/control:
+      - Change VCS repository
+      - Bump debhelper-compat to 13
+      - Add Rules-Requires-Root
+      - Add ruby-vcr as a build dependency
+      - Bumped Standards-Version to 4.5.1
+  * debian/patches:
+      - Remove obsolete patch
+      - Update patches due to removal of obsolete patch
+      - Add "Forwarded: not-needed" for all patches
+
+ -- Sergio de Almeida Cipriano Junior <sergiosacj@hotmail.com.br>  Thu, 07 Jan 2021 21:14:57 -0300
+
+ruby-coveralls (0.8.23-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 0.8.23 (Closes: #956600)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Refresh patches
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 13 Apr 2020 20:10:30 +0530
+
+ruby-coveralls (0.8.22-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Lucas Kanashiro ]
+  * Add patch to relax version of simplecov dependency
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with Debian Policy 4.5.0
+
+ -- Lucas Kanashiro <lucas.kanashiro@canonical.com>  Wed, 12 Feb 2020 12:16:35 -0300
+
+ruby-coveralls (0.8.22-2) unstable; urgency=medium
+
+  * Fix manpage creation during build time (Closes: #924383)
+  * Declare compliance with Debian Policu 4.3.0
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Sat, 23 Mar 2019 12:22:50 -0300
+
+ruby-coveralls (0.8.22-1) unstable; urgency=medium
+
+  * New upstream version 0.8.22
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with Debian Policy 4.1.5
+  * Add build dependency on ronn
+  * Refresh patch
+  * Update VCS urls to point to salsa
+  * debian/watch: use gemwatch.debian.net
+  * debian/control: remove constraint version on ruby-simplecov
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Mon, 09 Jul 2018 00:58:36 -0300
+
+ruby-coveralls (0.8.21-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Lucas Kanashiro ]
+  * New upstream version 0.8.21
+  * Set a deterministic date in the manpages to make the package build
+    reproducibly. Thanks to Eduard Sanou for providing the patch.
+    (Closes: #818430).
+  * Build depends on ruby-webmock to enable the execution of some tests
+  * Refresh other patches
+  * Update Debian packaging copyright
+  * debian/copyright: use https:// instead of http:// in Format field
+  * Bump debhelper compatibility level to 10
+  * Declare compliance with Debian Policy 4.1.0
+  * Mark package as autopkgtest-able
+  * Add myself to Uploaders list
+  * Create patch to remove the dependency on pry in tests
+  * Create patch to remove tins from gemspec
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Fri, 01 Sep 2017 18:13:41 -0300
+
+ruby-coveralls (0.7.0-2) unstable; urgency=low
+
+  * Add missing B-D on ruby-multi-json. (Closes: #802116).
+  * Bump Standards-Version to 3.9.6. No changes were required.
+  * Bump DH compat level to 9.
+  * Update Vcs-Browser address, switch to https.
+  * Wrap and sort dependencies list.
+  * Add B-D on ruby-simplecov-html and drop patch disabling its usage.
+
+ -- Miguel Landaeta <nomadium@debian.org>  Tue, 15 Dec 2015 13:09:10 -0300
+
+ruby-coveralls (0.7.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #740779).
+
+ -- Miguel Landaeta <nomadium@debian.org>  Tue, 04 Mar 2014 18:21:46 -0300
